@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "toDoList_backend": {
+      "main": "src/toDoList_backend/main.mo",
+      "type": "motoko"
+    },
+    "toDoList_frontend": {
+      "dependencies": [
+        "toDoList_backend"
+      ],
+      "source": [
+        "src/toDoList_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
